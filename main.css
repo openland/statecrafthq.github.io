@@ -1,0 +1,23 @@
+body {margin: 0px 100px; font-family: Helvetica Neue, Helvetica, san-serif; font-size:15px; }
+
+.flat-butt {
+  display: inline-block;
+  margin: 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 6px 15px;
+  letter-spacing: 0.5px;
+  border: 0;
+  background: #34495E;
+  color: #FFF;
+  cursor: pointer;
+  outline: 0;
+}
+.flat-butt:hover {
+  background: #005580;
+}
+
+#signup_form { margin-top: 80px; padding-bottom: 80px; }
+
+
+
