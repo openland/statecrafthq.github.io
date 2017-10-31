@@ -1,0 +1,57 @@
+include ./_components.jade
+
+doctype html
+html
+	+head ('Statecraft | About us')
+
+	body
+		+header
+
+		.about: .container
+			.about--title We help local governments use data to improve their results
+			.about--text
+				p Statecraft is a San Francisco-based government analytics company. We partner with cities and states to solve real problems by using data they already have. 
+				p Statecraft helps measure, predict, and improve key performance metrics such as housing production, job creation, and tax revenue collection. Our technology solutions covers data integration (merging multiple sources into a single integrated database), advanced analysis (predictions, alerts, optimizations), and interface design (dashboards, reports, visualizations, maps). 
+				p Using components from Statecraft platform, new analytics initiatives can be launched in weeks, not months. 
+
+			.about--hr
+
+		.mission: .container
+			.mission--label Our mission
+			.mission--title Help governments run better
+			.mission--hr
+
+		.team: .container
+			.team--title Leadership team
+			.team--text Faces behind Statecraft
+			.team--grid
+				.team--col: +team--item ('01', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('02', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('03', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('04', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('05', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('06', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+
+			.team--hr
+
+		.projects: .container
+			.projects--title Project highlights
+			.projects--grid
+				.projects--col: .projects--item
+					.projects--screen(style="background-image: url(img/projects--screen.png)")
+					.projects--name San Francisco Housing Analytics
+
+					a(href="#").btn.is-lblue.is-block See it live
+
+				.projects--col: .projects--item
+					.projects--intro
+						.projects--intro-l: img(src="img/logotype--light.svg" alt="")
+						.projects--intro-d 2017
+						.projects--intro-t What’s ahead for government performance websites
+
+					.projects--name Performance dashboards whitepaper
+
+					a(href="https://www.dropbox.com/s/rrrf44pr3hy5o3x/What%E2%80%99s%20Ahead%20for%20Government%20Performance%20Websites.pdf?dl=0").btn.is-lblue.is-block Free Download (PDF)
+
+		+work
+		+footer

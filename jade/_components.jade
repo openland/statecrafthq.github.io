@@ -1,0 +1,101 @@
+mixin head (title)
+	head
+		meta(charset="utf-8")
+		title= title
+
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no")
+		meta(name="format-detection" content="telephone=no")
+
+		link(rel="shortcut icon" href="favicon.png")
+
+		link(rel="stylesheet" type="text/css" href="css/style.css")
+
+		script(type="text/javascript" src="js/jquery-1.11.1.min.js")
+
+		script(type="text/javascript" src="js/scripts.js")
+
+		block
+
+mixin header (scrollTo)
+	header.header&attributes(attributes): .container: .header--in
+		a(href="index.html").header--logo: img(src="img/logotype.svg" alt="")
+
+		nav.header--nav: ul.header--list
+			li.header--item: a(href="about.html") About
+
+			if (scrollTo)
+				li.header--item: a(href="#problems").js-scroll Solutions
+				li.header--item: a(href="#platform").js-scroll Platform
+				li.header--item: a(href="#contact").js-scroll Contact
+			else
+				li.header--item: a(href="index.html#problems") Solutions
+				li.header--item: a(href="index.html#platform") Platform
+				li.header--item: a(href="index.html#contact") Contact
+
+mixin footer (scrollTo)
+	footer.footer&attributes(attributes): .container: .footer--in
+		a(href="index.html").footer--logo: img(src="img/logotype.svg" alt="")
+
+		ul.footer--list
+			li.footer--item: a(href="about.html") About
+
+			if (scrollTo)
+				li.footer--item: a(href="#problems").js-scroll Solutions
+				li.footer--item: a(href="#platform").js-scroll Platform
+			else
+				li.footer--item: a(href="index.html#problems") Solutions
+				li.footer--item: a(href="index.html#platform") Platform
+
+		// Begin MailChimp Signup Form
+		#mc_embed_signup
+			form.footer--subscribe#mc-embedded-subscribe-form(action="//one.us15.list-manage.com/subscribe/post?u=b588cb73ec7bd801c3b609670&amp;id=982401175d" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate=""): #mc_embed_signup_scroll
+				.mc-field-group
+					input.footer--input#mce-EMAIL(type="email" placeholder="Enter email to join Statecraft Insights" value="" name="EMAIL")
+					button.footer--button#mc-embedded-subscribe(type="submit" name="subscribe") Subscribe
+
+				#mce-responses.clear
+					#mce-error-response(style="display:none").response
+					#mce-success-response(style="display:none").response
+
+				// real people should not fill this in and expect good things - do not remove this or risk form bot signups
+
+				div(style="position: absolute; left: -5000px;" aria-hidden="true")
+					input(type="text" name="b_b588cb73ec7bd801c3b609670_982401175d" tabindex="-1" value="")
+		// End mc_embed_signup
+
+mixin problems--item (icon, title, text)
+	.problems--item&attributes(attributes)
+		.problems--item-i: i(class='icon-' + icon)
+		.problems--item-t= title
+		.problems--item-d= text
+
+mixin features--col (icon, label, items)
+	.features--col&attributes(attributes)
+		.features--icon: i(class='icon-' + icon)
+		.features--label= label
+
+		ul.features--list
+			each item in items
+				li= item
+
+mixin believe--item (title, text)
+	.believe--item&attributes(attributes)
+		.believe--item-t= title
+		.believe--item-d= text
+
+mixin team--item (photoID, name, position, twitter, linkedin)
+	.team--item&attributes(attributes)
+		.team--photo: img(src='img/team/item-' + photoID + '.png' alt="")
+		.team--name= name
+		.team--position= position
+		.team--links
+			a(href=twitter): i.icon-twitter
+			a(href=linkedin): i.icon-linkedin
+
+mixin work
+	#contact.work&attributes(attributes): .container
+		.work--title Work with us
+		.work--text Let’s explore what we can do together
+		.work--btn: a(href="#").btn.is-white Schedule a call via Calendly
+		.work--label Contact us directly
+		.work--fields #[a(href="#") team@statecraft.one]#[span or]#[a(href="#") +1 415 xxx xxxx]

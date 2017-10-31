@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 46 42" style="enable-background:new 0 0 46 42;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#4A6BFB;}
+</style>
+<title>Server Icon</title>
+<desc>Created with Sketch.</desc>
+<g>
+	<path class="st0" d="M0,0v20h46V0H0z M44,18H2V2h42V18z"/>
+	<path class="st0" d="M0,42h46V22H0V42z M2,24h42v16H2V24z"/>
+	<circle class="st0" cx="9" cy="10" r="2"/>
+	<circle class="st0" cx="9" cy="32" r="2"/>
+	<circle class="st0" cx="17" cy="10" r="2"/>
+	<circle class="st0" cx="37" cy="32" r="2"/>
+	<rect x="25" y="9" class="st0" width="14" height="2"/>
+	<rect x="15" y="31" class="st0" width="14" height="2"/>
+</g>
+</svg>

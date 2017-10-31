@@ -1,0 +1,66 @@
+include ./_components.jade
+
+doctype html
+html
+	+head ('Statecraft | Analytics solutions for local governments')
+
+	body
+		+header (true)
+
+		.intro: .container
+			.intro--title Analytics solutions for&nbsp;local governments
+			.intro--text Statecraft is&nbsp;a&nbsp;full-service implementation partner for&nbsp;your data initiatives
+			.intro--btn: a(href="#").btn.is-blue Work with us
+			.intro--project
+				.intro--screen: img(src="img/intro--screen.png" alt="")
+				.intro--label Project highlight
+
+				a(href="#").intro--link San Francisco Housing Analytics ↗
+
+		#problems.problems: .container
+			.problems--hr
+			.problems--grid
+				.problems--col
+					.problems--title Problems we solve
+					.problems--text Our software has everything startups need before a Series A, from formation to fundraising to hiring.
+
+				.problems--col: +problems--item ('monitor', 'Reports and dashboards', 'Automate reporting and increase transparency')
+				.problems--col: +problems--item ('zap', 'Performance gains', 'Find new revenue and cost savings opportunities')
+				.problems--col: +problems--item ('shield', 'Policy design', 'Model potential impact and evaluate policy changes')
+				.problems--col: +problems--item ('analytics', 'Operational analytics', 'Use data to make better decisions in daily workflows')
+				.problems--col: +problems--item ('support', 'Funding support', 'Develop data-based evidence for new investment programs')
+
+		.themes: .container: .themes--in: .themes--box
+			.themes--item Utilities
+			.themes--item Environment
+			.themes--item Safety
+			.themes--item Public works
+			.themes--item Jobs
+			.themes--item Housing
+			.themes--item Revenue
+			.themes--item Homelessness
+			.themes--item Education
+			.themes--item Justice
+			.themes--item Transit
+
+		#platform.features: .container
+			.features--hr
+			.features--title Statecraft platform is a set of ready-to-assemble analytics components. Your project can go live in weeks, not months.
+			.features--grid
+				+features--col ('server', 'Data integration', ['Data import automation', 'Field standardization and conversions', 'Duplicate detection, spot checks, and tests', 'Staff interface for manual edits', 'Privacy management'])
+				+features--col ('charts', 'Advanced analysis', ['Anomaly detection and alerts', 'Predictive analytics and forecasting', 'Funnel analysis', 'Benchmarking', 'Scenario modeling'])
+				+features--col ('map', 'Presentation', ['Dashboards and charts', 'Templated reports', 'Interactive maps', 'Data storytelling', 'Search'])
+
+		.believe: .container
+			.believe--title What we believe
+			.believe--text Our software has everything startups need before a Series A, from formation to fundraising to hiring.
+			.believe--grid
+				.believe--col: +believe--item ('Power of data', 'Model potential impact and evaluate policy changes').is-c1
+				.believe--col: +believe--item ('Asking why?', 'Data holds keys to root causes of major challenges').is-c2
+				.believe--col: +believe--item ('Collaboration', 'To make it work, involve everyone early and often').is-c3
+				.believe--col: +believe--item ('Agility', 'Start small, iterate, grow from projects to systems').is-c4
+				.believe--col: +believe--item ('Community of practice', 'What works in one place, can help others').is-c5
+				.believe--col: +believe--item ('Zero lock-in', 'Code and data belongs to governments, not vendors').is-c6
+
+		+work
+		+footer (true)
