@@ -1299,7 +1299,7 @@ body *:after {
 .mission--title {
   color: #4766FF;
   margin: 0 0 55px;
-  font-size: 56px;
+  font-size: 36px;
   line-height: 80px;
   font-weight: 800;
 }
@@ -1308,12 +1308,6 @@ body *:after {
     margin-bottom: 35px;
     font-size: 30px;
     line-height: 40px;
-  }
-}
-@media (min-width: 768px) and (max-width: 959px) {
-  .mission--title {
-    font-size: 45px;
-    line-height: 70px;
   }
 }
 .mission--hr {
