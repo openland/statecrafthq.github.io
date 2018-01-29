@@ -2,35 +2,35 @@ include ./_components.jade
 
 doctype html
 html
-	+head ('Statecraft | About us')
+	+head ('Statecraft » About us')
+		meta(property="og:title" content="Statecraft » About Us")/
+		meta(property="og:url" content="https://statecraft.one/about")/
+		meta(property="og:description" content="We help local governments use data to solve critical problems.")/
+		meta(property="og:image" content="https://statecraft.one/img/statecraft-square.png")/
 
 	body
 		+header
 
 		.about: .container
-			.about--title We help local governments use data to improve their results
+			.about--title We help local governments use data to solve critical problems
 			.about--text
-				p Statecraft is a San Francisco-based government analytics company. We partner with cities and states to solve real problems by using data they already have. 
-				p Statecraft helps measure, predict, and improve key performance metrics such as housing production, job creation, and tax revenue collection. Our technology solutions covers data integration (merging multiple sources into a single integrated database), advanced analysis (predictions, alerts, optimizations), and interface design (dashboards, reports, visualizations, maps). 
-				p Using components from Statecraft platform, new analytics initiatives can be launched in weeks, not months. 
+				p Statecraft is a San Francisco-based urban analytics company. We partner with cities, counties, and states to address biggest challenges faced by their communities.
+				p Statecraft helps measure, predict, and improve key indicators in housing affordability, job creation, and tax revenue. Our technology solutions cover data integration (merging multiple sources into a single integrated database), advanced analysis (predictions, alerts, optimizations), and interface design (dashboards, reports, visualizations, maps).
+				p Using components from Statecraft platform, new initiatives can be launched in weeks, not months.
 
 			.about--hr
 
 		.mission: .container
 			.mission--label Our mission
-			.mission--title Help governments run better
+			.mission--title Advance data-driven culture in government
 			.mission--hr
 
 		.team: .container
 			.team--title Leadership team
-			.team--text Faces behind Statecraft
+			.team--text(style="display: none") Faces behind Statecraft
 			.team--grid
-				.team--col: +team--item ('01', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
-				.team--col: +team--item ('02', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
-				.team--col: +team--item ('03', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
-				.team--col: +team--item ('04', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
-				.team--col: +team--item ('05', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
-				.team--col: +team--item ('06', 'Name Surname', 'CEO, Designer & Product Guy', 'https://twitter.com/', 'https://linkedin.com/')
+				.team--col: +team--item ('01', 'Yury Lifshits', 'CEO', 'yurylifshits', 'lifshits')
+				.team--col: +team--item ('02', 'Steve Korshakov', 'CTO', 'Ex3NDR', 'ex3ndr')
 
 			.team--hr
 
@@ -41,7 +41,7 @@ html
 					.projects--screen(style="background-image: url(img/projects--screen.png)")
 					.projects--name San Francisco Housing Analytics
 
-					a(href="#").btn.is-lblue.is-block See it live
+					a(href="https://sf.statecraft.one").btn.is-lblue.is-block See it live
 
 				.projects--col: .projects--item
 					.projects--intro
