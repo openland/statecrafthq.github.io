@@ -1239,7 +1239,7 @@ body *:after {
   font-size: 40px;
   line-height: 52px;
   font-weight: 500;
-  max-width: 500px;
+  max-width: 750px;
   max-height: initial;
 }
 @media (max-width: 767px) {
@@ -1325,7 +1325,7 @@ body *:after {
   }
 }
 .team--title {
-  margin: 0 0 10px;
+  margin: 0 0 60px;
   font-size: 28px;
   line-height: 40px;
   font-weight: 500;
@@ -1338,7 +1338,7 @@ body *:after {
 }
 .team--text {
   color: #6F7680;
-  margin: 0 0 62px;
+  margin: -50px 0 62px;
   font-size: 16px;
   line-height: 26px;
 }
@@ -1539,6 +1539,7 @@ body *:after {
   margin: 0 -30px 26px;
   width: auto;
   height: 300px;
+  display: block;
 }
 @media (max-width: 767px) {
   .projects--screen,
@@ -1556,9 +1557,31 @@ body *:after {
   }
 }
 .projects--screen {
-  background: center center no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+}
+.projects--screen img {
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: block;
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+}
+@media (max-width: 767px) {
+  .projects--screen img {
+    width: 100%;
+    height: auto;
+  }
 }
 .projects--intro {
   background-image: -webkit-linear-gradient(315deg, #3CAEFF 0%, #4766FF 100%);

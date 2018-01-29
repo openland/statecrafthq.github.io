@@ -12,7 +12,7 @@ html
 		+header
 
 		.about: .container
-			.about--title We help local governments use data to solve critical problems
+			.about--title We help local governments#[br] use data to solve critical problems
 			.about--text
 				p Statecraft is a San Francisco-based urban analytics company. We partner with cities, counties, and states to address biggest challenges faced by their communities.
 				p Statecraft helps measure, predict, and improve key indicators in housing affordability, job creation, and tax revenue. Our technology solutions cover data integration (merging multiple sources into a single integrated database), advanced analysis (predictions, alerts, optimizations), and interface design (dashboards, reports, visualizations, maps).
@@ -27,7 +27,9 @@ html
 
 		.team: .container
 			.team--title Leadership team
-			.team--text(style="display: none") Faces behind Statecraft
+
+			//.team--text Faces behind Statecraft
+
 			.team--grid
 				.team--col: +team--item ('01', 'Yury Lifshits', 'CEO', 'yurylifshits', 'lifshits')
 				.team--col: +team--item ('02', 'Steve Korshakov', 'CTO', 'Ex3NDR', 'ex3ndr')
@@ -38,20 +40,21 @@ html
 			.projects--title Project highlights
 			.projects--grid
 				.projects--col: .projects--item
-					.projects--screen(style="background-image: url(img/projects--screen.png)")
+					a(href="https://sf.statecraft.one").projects--screen: img(src="img/projects--screen.png" srcset="img/projects--screen@2x.png 2x" alt="")
+
 					.projects--name San Francisco Housing Analytics
 
-					a(href="https://sf.statecraft.one").btn.is-lblue.is-block See it live
+					a(href="https://sf.statecraft.one").btn.is-lpurple.is-block See it live
 
 				.projects--col: .projects--item
-					.projects--intro
+					a(href="https://www.dropbox.com/s/rrrf44pr3hy5o3x/What%E2%80%99s%20Ahead%20for%20Government%20Performance%20Websites.pdf?dl=0").projects--intro
 						.projects--intro-l: img(src="img/logotype--light.svg" alt="")
 						.projects--intro-d 2017
 						.projects--intro-t What’s ahead for government performance websites
 
 					.projects--name Performance dashboards whitepaper
 
-					a(href="https://www.dropbox.com/s/rrrf44pr3hy5o3x/What%E2%80%99s%20Ahead%20for%20Government%20Performance%20Websites.pdf?dl=0").btn.is-lblue.is-block Free Download (PDF)
+					a(href="https://www.dropbox.com/s/rrrf44pr3hy5o3x/What%E2%80%99s%20Ahead%20for%20Government%20Performance%20Websites.pdf?dl=0").btn.is-lpurple.is-block Free Download (PDF)
 
 		+work
 		+footer

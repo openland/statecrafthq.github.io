@@ -741,7 +741,7 @@ body {
 		text-align: center;
 
 		.font (40px, 52px, 500);
-		.max-size (500px);
+		.max-size (750px);
 
 		@media @media-xs-only { margin-bottom: 30px;
 			.font (26px, 36px);
@@ -803,7 +803,7 @@ body {
 
 	@media @media-xs-only { padding: 50px 0 0; }
 
-	&--title { margin: 0 0 10px;
+	&--title { margin: 0 0 60px;
 		.font (28px, 40px, 500);
 
 		@media @media-xs-only { .font (24px, 34px); }
@@ -811,7 +811,7 @@ body {
 
 	&--text {
 		color: @text-2;
-		margin: 0 0 62px;
+		margin: -50px 0 62px;
 
 		.font (16px, 26px);
 
@@ -952,6 +952,7 @@ body {
 	&--screen,
 	&--intro { margin: 0 -30px 26px;
 		.size (auto, 300px);
+		.display (block);
 
 		@media @media-xs-only { margin: 0 -20px 20px;
 			.size (auto, 220px);
@@ -960,9 +961,18 @@ body {
 		@media @media-sm-only { .size (auto, 250px); }
 	}
 
-	&--screen {
-		background: center center no-repeat;
-		background-size: cover;
+	&--screen { overflow: hidden;
+		.position (relative);
+
+		img { transform: translate(-50%, -50%);
+			.display (block);
+			.size (auto, 100%);
+			.position-tl (absolute, 50%, 50%);
+
+			@media @media-xs-only {
+				.size (100%);
+			}
+		}
 	}
 
 	&--intro {
