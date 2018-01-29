@@ -375,13 +375,13 @@ body *:after {
   background: #ffffff;
   color: #22262E;
 }
-.btn.is-blue {
-  background: #4766FF;
+.btn.is-purple {
+  background: #6B50FF;
   color: #ffffff;
 }
-.btn.is-lblue {
-  background: #C0D8FD;
-  color: #0E418C;
+.btn.is-lpurple {
+  background: #E5E0FF;
+  color: #6B50FF;
 }
 .btn:hover {
   opacity: 0.7;
@@ -412,8 +412,7 @@ body *:after {
 }
 .header--logo {
   float: left;
-  padding: 0 0 9px;
-  margin: -4px 0 0;
+  margin: -1px 0 0 -12px;
   display: block;
 }
 @media (max-width: 767px) {
@@ -425,8 +424,8 @@ body *:after {
 }
 .header--logo img {
   display: block;
-  width: 110px;
-  height: 20px;
+  width: 88px;
+  height: 17px;
 }
 @media (max-width: 767px) {
   .header--logo img {
@@ -481,8 +480,8 @@ body *:after {
   display: block;
 }
 .header--item a:hover {
-  color: #4766FF;
-  border-color: #4766FF;
+  color: #6B50FF;
+  border-color: #6B50FF;
 }
 .intro {
   padding: 35px 0 96px;
@@ -553,7 +552,7 @@ body *:after {
   margin: 0 0 5px;
 }
 .intro--link {
-  color: #4766FF;
+  color: #6B50FF;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   -webkit-transition: 300ms all ease;
@@ -565,7 +564,7 @@ body *:after {
   line-height: 22px;
 }
 .intro--link:hover {
-  border-color: #4766FF;
+  border-color: rgba(107, 80, 255, 0.5);
 }
 .problems {
   padding: 0 0 65px;
@@ -640,7 +639,7 @@ body *:after {
 }
 .problems--item-i {
   text-align: center;
-  color: #4766FF;
+  color: #6B50FF;
   margin: 0 0 19px;
 }
 .problems--item-i i {
@@ -834,7 +833,7 @@ body *:after {
   }
 }
 .features--icon {
-  color: #4766FF;
+  color: #6B50FF;
   border-bottom: 1px solid #22262E;
   padding: 0 0 24px;
   margin: 0 0 27px;
@@ -977,7 +976,7 @@ body *:after {
   border-left-color: #2D7FF9;
 }
 .work {
-  background: #4766FF;
+  background: #6B50FF;
   color: #ffffff;
   text-align: center;
   padding: 52px 0 56px;
@@ -1047,9 +1046,15 @@ body *:after {
 .work--fields a {
   color: #ffffff;
   text-decoration: none;
-  border-bottom: 2px solid #6B84FF;
+  border-bottom: 2px solid #8C77FF;
+  -webkit-transition: 300ms all ease;
+  -o-transition: 300ms all ease;
+  transition: 300ms all ease;
   display: inline-block;
   vertical-align: top;
+}
+.work--fields a:hover {
+  border-color: transparent;
 }
 .footer--in {
   padding: 32px 0;
@@ -1070,7 +1075,7 @@ body *:after {
 }
 .footer--logo {
   float: left;
-  padding: 4px 0 16px;
+  padding: 11px 0 12px;
   display: block;
 }
 @media (max-width: 767px) {
@@ -1081,8 +1086,8 @@ body *:after {
 }
 .footer--logo img {
   display: block;
-  width: 110px;
-  height: 20px;
+  width: 88px;
+  height: 17px;
 }
 @media (max-width: 767px) {
   .footer--logo img {
@@ -1092,7 +1097,7 @@ body *:after {
 .footer--list {
   list-style: none;
   margin: 0;
-  padding: 0 0 0 134px;
+  padding: 0 0 0 154px;
   float: left;
   font-size: 0;
   line-height: 0;
@@ -1107,7 +1112,7 @@ body *:after {
 }
 @media (min-width: 768px) and (max-width: 959px) {
   .footer--list {
-    padding: 0;
+    padding: 0 0 0 20px;
   }
 }
 .footer--item {
@@ -1137,8 +1142,8 @@ body *:after {
   display: block;
 }
 .footer--item a:hover {
-  color: #4766FF;
-  border-color: #4766FF;
+  color: #6B50FF;
+  border-color: #6B50FF;
 }
 .footer--subscribe {
   float: right;
@@ -1297,7 +1302,7 @@ body *:after {
   }
 }
 .mission--title {
-  color: #4766FF;
+  color: #6B50FF;
   margin: 0 0 55px;
   font-size: 36px;
   line-height: 80px;
@@ -1395,7 +1400,7 @@ body *:after {
 }
 .team--photo:before {
   content: "";
-  border: 2px solid #4766FF;
+  border: 2px solid #6B50FF;
   margin: 0 0 0 -51px;
   -webkit-border-radius: 102px;
   border-radius: 102px;
