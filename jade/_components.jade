@@ -21,8 +21,6 @@ mixin header (isHome)
 		a(href="/").header--logo: img(src="img/logotype.svg" alt="")
 
 		nav.header--nav: ul.header--list
-			li.header--item: a(href="/about") About
-
 			if (isHome)
 				li.header--item: a(href="#problems").js-scroll Solutions
 				li.header--item: a(href="#platform").js-scroll Platform
@@ -32,19 +30,21 @@ mixin header (isHome)
 				li.header--item: a(href="/#platform") Platform
 				li.header--item: a(href="/#contact") Contact
 
+			li.header--item: a(href="/about") About
+
 mixin footer (scrollTo)
 	footer.footer&attributes(attributes): .container: .footer--in
 		a(href="/").footer--logo: img(src="img/logotype.svg" alt="")
 
 		ul.footer--list
-			li.footer--item: a(href="/about") About
-
 			if (scrollTo)
 				li.footer--item: a(href="#problems").js-scroll Solutions
 				li.footer--item: a(href="#platform").js-scroll Platform
 			else
 				li.footer--item: a(href="/#problems") Solutions
 				li.footer--item: a(href="/#platform") Platform
+
+			li.footer--item: a(href="/about") About
 
 		// Begin MailChimp Signup Form
 		#mc_embed_signup
