@@ -852,9 +852,9 @@ body {
 
 		&:before {
 			content: "";
-			border: 2px solid @purple-1;
+			background: @purple-1;
 			margin: 0 0 0 -51px;
-			border-radius: 102px;
+			border-radius: 51px;
 			z-index: 1;
 
 			.display (block);
@@ -865,8 +865,19 @@ body {
 		&:after {
 			content: "";
 			background: @white;
-			margin: 0 0 0 -51px;
+			margin: 0 0 0 -49px;
+			border-radius: 49px;
 			z-index: 2;
+
+			.display (block);
+			.position-tl (absolute, -6px, 50%);
+			.size (98px, 98px);
+		}
+
+		i {
+			background: @white;
+			margin: 0 0 0 -51px;
+			z-index: 3;
 
 			.display (block);
 			.position-tl (absolute, 20px, 50%);
@@ -877,7 +888,7 @@ body {
 			overflow: hidden;
 			margin: 0 auto;
 			border-radius: 86px;
-			z-index: 3;
+			z-index: 4;
 
 			.size (86px, 86px);
 			.display (block);

@@ -1400,10 +1400,10 @@ body *:after {
 }
 .team--photo:before {
   content: "";
-  border: 2px solid #6B50FF;
+  background: #6B50FF;
   margin: 0 0 0 -51px;
-  -webkit-border-radius: 102px;
-  border-radius: 102px;
+  -webkit-border-radius: 51px;
+  border-radius: 51px;
   z-index: 1;
   display: block;
   position: absolute;
@@ -1417,8 +1417,23 @@ body *:after {
 .team--photo:after {
   content: "";
   background: #ffffff;
-  margin: 0 0 0 -51px;
+  margin: 0 0 0 -49px;
+  -webkit-border-radius: 49px;
+  border-radius: 49px;
   z-index: 2;
+  display: block;
+  position: absolute;
+  top: -6px;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  width: 98px;
+  height: 98px;
+}
+.team--photo i {
+  background: #ffffff;
+  margin: 0 0 0 -51px;
+  z-index: 3;
   display: block;
   position: absolute;
   top: 20px;
@@ -1433,7 +1448,7 @@ body *:after {
   margin: 0 auto;
   -webkit-border-radius: 86px;
   border-radius: 86px;
-  z-index: 3;
+  z-index: 4;
   width: 86px;
   height: 86px;
   display: block;

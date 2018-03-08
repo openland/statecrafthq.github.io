@@ -94,7 +94,7 @@ mixin believe--item (title, text)
 
 mixin team--item (photoID, name, position, twitter, linkedin)
 	.team--item&attributes(attributes)
-		.team--photo: img(src='img/team/item-' + photoID + '.jpg' alt="")
+		.team--photo #[i]#[img(src='img/team/item-' + photoID + '.jpg' alt=name)]
 		.team--name= name
 		.team--position= position
 		.team--links
